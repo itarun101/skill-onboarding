@@ -1,18 +1,27 @@
 # Skill Onboarding
 
-An agent-neutral skill for understanding and adopting skills across AI agents. It reads a skill's instructions and related guides, explains what the skill does, checks fit with the target agent, and prepares clear installation, verification, and first-use steps.
-
-## Supported agent coverage
-
-The skill can prepare agent-specific guidance for Codex, Claude Code, Cursor, Google Antigravity, and other agents when their current documentation confirms support. A shared `SKILL.md` format does not guarantee identical discovery rules or installation paths, so the workflow checks the target agent's official documentation and marks unverified paths clearly.
+An agent-neutral skill for understanding and adopting skills across AI agents. It reads a skill’s instructions and related guides, explains what the skill does, checks fit with the target agent, and prepares clear installation, verification, and first-use steps.
 
 ## Use
 
-Provide a skill folder, repository, archive, or URL and ask the agent to explain, compare installation options, or guide you through adoption. Specify your target agent and operating system when you want exact steps.
+Provide a skill folder, repository, archive, or URL and ask your agent to explain the skill or guide you through installing it. For tailored steps, include your AI agent and operating system.
+
+## Agent setup guides
+
+These official guides explain how to add skills or configure agent instructions. Each agent has its own format and setup process, so check the guide for your platform.
+
+- [OpenAI Codex — Skills](https://developers.openai.com/codex/skills/)
+- [Anthropic Claude Code — Skills](https://docs.anthropic.com/en/docs/claude-code/skills)
+- [Cursor — Rules for AI](https://docs.cursor.com/context/rules-for-ai)
+- [Google Antigravity — Agent skills](https://antigravity.google/docs/skills)
+- [GitHub Copilot — Add agent skills](https://docs.github.com/en/copilot/how-tos/copilot-cli/customize-copilot/add-skills)
+- [Visual Studio Code — Agent skills](https://code.visualstudio.com/docs/agent-customization/agent-skills)
+
+For another agent, check its publisher’s documentation for skill support, supported file formats, installation locations, and verification steps.
 
 ## Install
 
-Place the `skill-onboarding` directory in a skill location supported by your chosen agent. Installation paths and discovery behavior vary; consult that agent's current official documentation. The skill can help determine the correct location and verification step.
+Place the `skill-onboarding` directory in a skill location supported by your chosen agent. Paths and discovery behavior vary; use that agent’s current official documentation.
 
 ## Contents
 
