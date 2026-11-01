@@ -1,21 +1,20 @@
 # Onboarding response format
 
-Use the sections that fit the request; omit empty sections.
+Use concise sections in this order. Complete the assessment before asking whether to install.
 
-## What this skill does
-Explain its purpose and ideal use case in one or two sentences.
+## What it is
+Explain what the candidate is, what it does, and whether it is a skill, app/service, or bundle.
 
-## Before you install
-List confirmed prerequisites and missing information that affects compatibility or destination.
+## Objective and fit
+State what installing it would achieve, what it would change or require, and whether it fits the user's use case: fits, partly fits, or does not fit. Give a brief reason.
 
-## Install steps
-Number each action. State where it happens, the command or UI action, and what success looks like. Separate completed actions from steps the user still needs to take.
+## Requirements and caveats
+List relevant agent/platform compatibility, prerequisites, costs, credentials, runtime services, conflicts, and risks. Mark facts versus inferences and cite inspected docs.
 
-## Verify and start using it
-Give a documented discovery or load check and a useful first invocation. Do not imply verification happened unless performed.
+## Recommendation
+Say whether installation is recommended and why. If the requested candidate is a full application rather than an agent skill, make that distinction explicit.
 
-## Decisions or caveats
-Mention relevant constraints, unresolved docs, access needs, and conflicts. Attribute claims to inspected files where possible.
+## Install choice
+When install is appropriate and not already authorized, ask one direct question naming the candidate and target: `Do you want me to install <candidate> in <target/environment>?` Include any material side effects in the same question. Wait for the answer before acting.
 
-## Next actions
-End with one to three next steps. Include a paste-ready prompt if the user needs to continue elsewhere.
+After approval, provide ordered steps as you perform them, then report what changed and the result of a concrete verification. Distinguish completed actions from any remaining user steps.
