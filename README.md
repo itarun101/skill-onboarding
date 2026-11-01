@@ -1,14 +1,18 @@
 # Skill Onboarding
 
-An agent-neutral skill for understanding and adopting skills across AI agents. It reads a skill’s instructions and related guides, explains what the skill does, checks fit with the target agent, and prepares clear installation, verification, and first-use steps.
+An agent-neutral skill for understanding and adopting skills across AI agents. It reads a skill's instructions and guides, explains what it does, checks compatibility with your chosen agent, and prepares tailored installation, verification, and first-use steps.
 
 ## Use
 
-Provide a skill folder, repository, archive, or URL and ask your agent to explain the skill or guide you through installing it. For tailored steps, include your AI agent and operating system.
+Give your agent a skill folder, repository, archive, or URL and ask it to explain or help install the skill. The onboarding skill can inspect a specific repository and guide you step by step.
 
-## Agent setup guides
+## Install in Claude Code
 
-These official guides explain how to add skills or configure agent instructions. Each agent has its own format and setup process, so check the guide for your platform.
+Install with the Skills CLI: `npx skills add itarun101/skill-onboarding`. Choose Claude Code when prompted. The CLI can detect supported agents and install the skill into their configured locations. See the [Skills CLI guide](https://www.skills.sh/docs/cli).
+
+Then ask Claude Code: `Use skill-onboarding to inspect and guide me through installing a skill from <repository URL>.`
+
+## Other agent setup guides
 
 - [OpenAI Codex — Skills](https://developers.openai.com/codex/skills/)
 - [Anthropic Claude Code — Skills](https://docs.anthropic.com/en/docs/claude-code/skills)
@@ -17,17 +21,13 @@ These official guides explain how to add skills or configure agent instructions.
 - [GitHub Copilot — Add agent skills](https://docs.github.com/en/copilot/how-tos/copilot-cli/customize-copilot/add-skills)
 - [Visual Studio Code — Agent skills](https://code.visualstudio.com/docs/agent-customization/agent-skills)
 
-For another agent, check its publisher’s documentation for skill support, supported file formats, installation locations, and verification steps.
+Installation locations and discovery differ by agent. Check each publisher's current documentation.
 
-## Install
+## Repository layout
 
-Place the `skill-onboarding` directory in a skill location supported by your chosen agent. Paths and discovery behavior vary; use that agent’s current official documentation.
-
-## Contents
-
-- `SKILL.md` — onboarding workflow and safety boundaries
-- `references/onboarding-output.md` — suggested response structure
+- `skill-onboarding/SKILL.md` — skill instructions
+- `skill-onboarding/references/onboarding-output.md` — response format guide
 
 ## License
 
-No license is currently specified. Add a license file if you want to grant others explicit reuse rights.
+No license is specified yet.
